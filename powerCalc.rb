@@ -1,15 +1,6 @@
 require 'csv'
 require 'date'
 
-# Import file
-
-
-# for each row:
-
-# check time, calc price
-
-
-
 class Loyal_Kiwi
 
     attr_accessor :total_cost
@@ -119,7 +110,7 @@ loyalKiwi = Loyal_Kiwi.new
 moveMaster = Move_Master.new
 flick = Flick_Business.new
 
-data = CSV.read('./cranford_2021.csv', headers: true)
+data = CSV.read('./data/cranford_2021.csv', headers: true)
 
 kilowattCount = 0
 for row in data
